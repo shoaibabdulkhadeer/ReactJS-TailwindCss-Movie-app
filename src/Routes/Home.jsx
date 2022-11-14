@@ -10,7 +10,7 @@ const Home = ({movies, setSearchValue , searchValue}) => {
     <div className=' min-h-[100vh] bg-[#0a192f]  text-slate-200 flex flex-col  font-extrabold'>
 
           <div className='w-full h-36 flex flex-col items-center justify-between gap-4 p-12 '>
-               <h1 className='text-3xl font-bold font-red-500 p-2'>MovieApp</h1>
+               <h1 className='text-3xl font-bold font-red-500 p-2'>MoviesApp</h1>
 
                 <div>
                 <input 
