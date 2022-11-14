@@ -8,7 +8,7 @@ const MoviePage = () => {
 
   const [movie , setMovie] = useState([])
 
-  const url = `https://www.omdbapi.com/?i=${useParams().movieId}&apikey=${process.env.REACT_APP_API_KEY}` 
+  const url = `https://www.omdbapi.com/?i=${useParams().movieId}&apikey=f7f42f5f#}` 
 
   useEffect (() => {
    axios.get(url).then((response) => {
