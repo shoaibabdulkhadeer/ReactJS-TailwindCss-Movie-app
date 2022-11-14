@@ -8,7 +8,7 @@ const MoviePage = () => {
 
   const [movie , setMovie] = useState([])
 
-  const url = `https://www.omdbapi.com/?i=${useParams().movieId}&apikey=f7f42f5f#}` 
+  const url = `https://www.omdbapi.com/?i=${useParams().movieId}&apikey=${process.env.REACT_APP_API_KEY}` 
 
   useEffect (() => {
    axios.get(url).then((response) => {
@@ -23,7 +23,7 @@ const MoviePage = () => {
   
    <div className='flex flex-col md:flex-row items-center justify-center  p-10'>
    <Link to="/">
-     <RiArrowGoBackFill size={40} className="m-5  w-full "/> 
+     <RiArrowGoBackFill size={40} className="m-5 w-full "/> 
      </Link>
         <img src ={movie.Poster} alt ="poster" className='rounded-3xl w-96 ml-10'/>
 

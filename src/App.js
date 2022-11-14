@@ -15,7 +15,7 @@ function App() {
     
   // function for fetching data 
    const getRequest = async (searchValue) => {
-   const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=f7f42f5f#`
+   const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.REACT_APP_API_KEY}`
    const response = await fetch(url)
     const data = await response.json();
      
