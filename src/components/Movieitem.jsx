@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 
@@ -7,7 +7,7 @@ const Movieitem = ({ movie}) => {
 
   console.log(movie)
   return ( 
-     <Link to= {`/movie/${movie.imdbID}`}>
+   
 
 
     <div key={movie.imdbID} className=" text-center
@@ -19,9 +19,11 @@ const Movieitem = ({ movie}) => {
     <p className='font-semibold text-sm sm:text-xl text-blue-600'>Type - {movie?.Type?.toUpperCase()}</p>
    
     </div>
-    </Link>
+  
   
   );
 }
 
 export default Movieitem
+
+
