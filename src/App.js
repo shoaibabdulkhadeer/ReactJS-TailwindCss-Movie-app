@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Home from "./Routes/Home";
 import { Route, Routes } from 'react-router-dom';
-// import MoviePage from "../src/Routes/MoviePage"
+import MoviePage from "../src/Routes/MoviePage"
 
 
 function App() {
@@ -35,7 +35,7 @@ useEffect(()=> {
 
      <Routes>
         <Route path='/' element={<Home movies={movies} searchValue={searchValue}  setSearchValue={setSearchValue} />}/>
-        {/* <Route path='/movie/:movieId' element={<MoviePage />} /> */}
+        <Route path='/movie/:movieId' element={<MoviePage />} />
        </Routes>
     </div>
   );

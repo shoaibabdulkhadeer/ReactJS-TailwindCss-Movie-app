@@ -1,14 +1,17 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, } from 'react-router-dom'
 import { RiArrowGoBackFill} from 'react-icons/ri';
 
 
 const MoviePage = () => {
+ 
 
   const [movie , setMovie] = useState([])
 
-  const url = `https://www.omdbapi.com/?i=${useParams().movieId}&apikey=${process.env.REACT_APP_API_KEY}` 
+  const params = useParams()
+
+  const url = `https://www.omdbapi.com/?i=${params.movieId}&apikey=${process.env.REACT_APP_API_KEY}` 
 
   useEffect (() => {
    axios.get(url).then((response) => {
